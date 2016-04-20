@@ -1,4 +1,4 @@
-function linpack_bench_backslash ( n, lda )
+function time = linpack_bench_backslash ( n, lda )
 
 %*****************************************************************************80
 %
@@ -54,6 +54,8 @@ function linpack_bench_backslash ( n, lda )
 
   x_true(1:n,1) = 1.0;
   b(1:n,1) = a(1:n,1:n) * x_true(1:n,1);
+
+  fprintf ( 1, 'LINPACK_BENCH_BACKSLASH\n' );
 
   t1 = cputime;
 
@@ -124,17 +126,18 @@ function a = r8_matgen ( lda, n )
 %
 %    Output, real A(LDA,N), the N by N matrix.
 %
-  a = zeros ( lda, n );
+  a = rand ( lda, n );
+  %a = zeros ( lda, n );
 
-  init(1:4) = [ 1, 2, 3, 1325 ];
+  %init(1:4) = [ 1, 2, 3, 1325 ];
 
-  for j = 1 : n
-     for i = 1 : n
-       [ a(i,j), init ] = r8_random ( init );
-    end
-  end
-  
-  a(1:n,1:n) = a(1:n,1:n) - 0.5;
+  %for j = 1 : n
+  %   for i = 1 : n
+  %     [ a(i,j), init ] = r8_random ( init );
+  %  end
+  %end
+  %
+  %a(1:n,1:n) = a(1:n,1:n) - 0.5;
 
   return
 end
