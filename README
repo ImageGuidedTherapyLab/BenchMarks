@@ -1,0 +1,91 @@
+
+Linpack Benchmark
+=================
+ + test flop performance
+ + http://www.netlib.org/benchmark/hpl/
+ + http://www.top500.org/lists/
+ + MATLAB Version: http://people.sc.fsu.edu/~jburkardt/m_src/linpack_bench_backslash/linpack_bench_backslash.html
+
+
+
+STREAM Benchmark
+================
+ + stresses memory bandwidth
+ + http://www.cs.virginia.edu/stream/
+ + http://www.cs.virginia.edu/stream/top20/Bandwidth.html
+
+
+CPU info
+========
+
+$ more /proc/cpuinfo
+.
+.
+processor       : 23
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 44
+model name      : Intel(R) Xeon(R) CPU           E5645  @ 2.40GHz
+stepping        : 2
+cpu MHz         : 2400.055
+cache size      : 12288 KB
+physical id     : 0
+siblings        : 12
+core id         : 10
+cpu cores       : 6
+apicid          : 21
+initial apicid  : 21
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 11
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt aes lahf_lm ida arat tpr_shadow vnmi flexpriority ept vpid
+bogomips        : 4800.17
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 40 bits physical, 48 bits virtual
+power management:
+
+$ more /proc/meminfo
+MemTotal:       198485232 kB
+MemFree:        83024152 kB
+Buffers:         3293788 kB
+Cached:         84483040 kB
+SwapCached:            0 kB
+Active:         42952952 kB
+Inactive:       61624708 kB
+Active(anon):   16801940 kB
+Inactive(anon):    80788 kB
+Active(file):   26151012 kB
+Inactive(file): 61543920 kB
+Unevictable:          48 kB
+Mlocked:              48 kB
+SwapTotal:      97654776 kB
+SwapFree:       97654776 kB
+Dirty:                44 kB
+Writeback:             0 kB
+AnonPages:      16800892 kB
+Mapped:           727936 kB
+Shmem:             81904 kB
+Slab:            6953136 kB
+SReclaimable:    6787860 kB
+SUnreclaim:       165276 kB
+KernelStack:       13736 kB
+PageTables:       116396 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    196897392 kB
+Committed_AS:   21218380 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      751764 kB
+VmallocChunk:   34255752188 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      520164 kB
+DirectMap2M:    16254976 kB
+DirectMap1G:    184549376 kB
