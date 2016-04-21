@@ -2,8 +2,8 @@ clear all
 close all
 
 
-SizeArray = [5000:5000:100000];
 SizeArray = [1000:1000:10000];
+SizeArray = [5000:5000:100000];
 
 FlopPerformance = zeros(1,length(SizeArray ));
 TimePerformance = zeros(1,length(SizeArray ));
