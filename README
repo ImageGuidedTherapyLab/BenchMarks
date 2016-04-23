@@ -51,6 +51,8 @@ cache_alignment : 64
 address sizes   : 40 bits physical, 48 bits virtual
 power management:
 
+http://ark.intel.com/products/64589/Intel-Xeon-Processor-E5-2667-15M-Cache-2_90-GHz-8_00-GTs-Intel-QPI
+
 $ more /proc/meminfo
 MemTotal:       198485232 kB
 MemFree:        83024152 kB
