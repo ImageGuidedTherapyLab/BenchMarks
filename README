@@ -5,7 +5,12 @@ Linpack Benchmark
  + http://www.netlib.org/benchmark/hpl/
  + http://www.top500.org/lists/
  + MATLAB Version: http://people.sc.fsu.edu/~jburkardt/m_src/linpack_bench_backslash/linpack_bench_backslash.html
-
+ + http://www.top500.org/project/top500_description/
+      # Proc. - Number of processors (Cores)
+      # Rmax  - Maximal LINPACK performance achieved
+      # Rpeak - Theoretical peak performance
+      # Nmax  - Problem size for achieving Rmax
+      # N1/2  - Problem size for achieving half of Rmax
 
 
 STREAM Benchmark
